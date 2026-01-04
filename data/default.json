@@ -32,5 +32,8 @@
             { "label": "Innovazione", "desc": "Hub tecnologici in crescita a Barcellona e Madrid, con focus su BioTech e Smart Cities.", "url": "", "placeholder": "" }
         ],
         "resources": "Il sottosuolo spagnolo è tra i più ricchi d'Europa per minerali. Primo produttore mondiale di mercurio e gesso, con importanti giacimenti di piombo e uranio."
-    }
+    },
+    "crediti": [
+        { "name": "Jules", "url": "" }
+    ]
 }
