@@ -1,0 +1,16 @@
+:root { --spanish-red: #dc2626; --spanish-gold: #fbbf24; }
+body { font-family: 'Inter', sans-serif; background-color: #f8f7f5; color: #1c1917; scroll-behavior: smooth; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+.chart-container { position: relative; width: 100%; height: 350px; }
+.active-tab { border-bottom: 3px solid var(--spanish-red); color: var(--spanish-red); font-weight: 700; }
+.fade-in { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.img-placeholder { background-color: #e5e7eb; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-weight: 800; font-size: 0.7rem; border: 2px dashed #d1d5db; overflow: hidden; position: relative; }
+.img-overlay { background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%); }
+.custom-scroll::-webkit-scrollbar { width: 4px; }
+.custom-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+.config-section { background: white; border-radius: 2rem; padding: 2.5rem; border: 1px solid #e7e5e4; margin-bottom: 3rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.04); }
+.btn-plus { background-color: #dcfce7; color: #16a34a; font-weight: bold; padding: 0.5rem 1rem; border-radius: 0.75rem; transition: all 0.2s; border: none; cursor: pointer; }
+.btn-plus:hover { background-color: #16a34a; color: white; }
+.btn-minus { background-color: #fee2e2; color: #dc2626; font-weight: bold; padding: 0.5rem 1rem; border-radius: 0.75rem; transition: all 0.2s; border: none; cursor: pointer; }
+.btn-minus:hover { background-color: #dc2626; color: white; }
