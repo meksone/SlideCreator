@@ -1,0 +1,36 @@
+{
+    "territorio": {
+        "titolo": "Geografia Fisica e Territorio",
+        "descrizione": "La Spagna occupa circa l'85% della Penisola Iberica ed è il secondo paese più montuoso d'Europa dopo la Svizzera. Confina a nord con la Francia e l'Andorra (Pirenei), a ovest con il Portogallo e a sud con Gibilterra e il Marocco.",
+        "mappa_url": "", "mappa_placeholder": "",
+        "mari_coste": "La Spagna è bagnata dal Mar Mediterraneo a est e a sud, dall'Oceano Atlantico a ovest e dal Mar Cantabrico a nord. Le coste sono variegate: alte e frastagliate in Galizia, sabbiose nel Mediterraneo.",
+        "isole": "Comprende l'arcipelago delle Baleari nel Mediterraneo e l'arcipelago delle Canarie nell'Oceano Atlantico di origine vulcanica.",
+        "monti_pianure": ["Pirenei", "Sistemi Betici (Sierra Nevada)", "Sistema Centrale", "Cordigliera Cantabrica", "Depressione dell'Ebro", "Depressione Betica"],
+        "fiumi_laghi": ["Tago (1.007 km)", "Ebro (830 km)", "Duero", "Guadalquivir", "Lago di Sanabria"]
+    },
+    "cities": [
+        { "title": "Madrid", "url": "", "placeholder": "", "pop": "3.3 Milioni", "foundation": "Fondata nel IX sec.", "history": "Originariamente Mayrit araba", "wiki": "Madrid è la capitale della Spagna. Situata al centro della penisola sul fiume Manzanarre, è il fulcro politico e culturale del paese, sede del governo e del Re.", "landmarks": [{"icon":"🖼️", "name":"Museo del Prado", "desc":"Una delle pinacoteche più importanti al mondo."}] },
+        { "title": "Barcellona", "url": "", "placeholder": "", "pop": "1.6 Milioni", "foundation": "Fondata dai Romani", "history": "Antica Barcino", "wiki": "Capitale della Catalogna e seconda città del paese. Famosa per il design modernista unico di Antoni Gaudí e il suo vivace porto mediterraneo.", "landmarks": [{"icon":"🦎", "name":"Sagrada Família", "desc":"Basilica incompiuta simbolo globale di Gaudí."}] },
+        { "title": "Granada", "url": "", "placeholder": "", "pop": "232 Mila", "foundation": "VIII sec.", "history": "Ultimo regno Nazari", "wiki": "Ai piedi della Sierra Nevada, Granada è il simbolo della fusione tra cultura araba e cristiana. Celebre per l'Alhambra, ultimo baluardo arabo in Spagna.", "landmarks": [{"icon":"🏰", "name":"Alhambra", "desc":"Palazzo reale e cittadella dei sultani arabi."}] },
+        { "title": "Cordoba", "url": "", "placeholder": "", "pop": "325 Mila", "foundation": "Romana", "history": "Capitale del Califfato", "wiki": "Famosa per essere stata la città più colta d'Europa nel X secolo. Vanta una densità altissima di siti UNESCO tra vicoli bianchi e cortili fioriti.", "landmarks": [{"icon":"🕌", "name":"Mezquita", "desc":"Moschea-Cattedrale straordinaria con arcate rosse e bianche."}] }
+    ],
+    "cultura": [
+        { "label": "San Fermín", "desc": "La celebre corsa dei tori (Encierro) a Pamplona. Migliaia di persone corrono davanti a sei tori selvaggi per le strade medievali.", "url": "", "placeholder": "" },
+        { "label": "Il Flamenco", "desc": "Patrimonio UNESCO. Arte che unisce canto, chitarra e ballo, nata dall'unione di culture gitane, arabe ed ebree in Andalusia.", "url": "", "placeholder": "[Image of Flamenco]" },
+        { "label": "Las Fallas", "desc": "Valencia accoglie la primavera bruciando monumentali sculture di cartapesta (ninots) in un rito di fuoco e satira.", "url": "", "placeholder": "" },
+        { "label": "Semana Santa", "desc": "Solenni processioni pasquali con i monumentali 'Pasos' religiosi portati a spalla, tipiche di Siviglia.", "url": "", "placeholder": "" }
+    ],
+    "economia": {
+        "chartData": [
+            { "label": "Servizi", "value": 75 },
+            { "label": "Industria", "value": 20 },
+            { "label": "Agricoltura", "value": 5 }
+        ],
+        "items": [
+            { "label": "Servizi e Turismo", "desc": "Pilastro della nazione (75% PIL). Con 80+ milioni di turisti, la Spagna è una superpotenza dell'ospitalità.", "url": "", "placeholder": "" },
+            { "label": "Industria Auto", "desc": "2° produttore europeo di autoveicoli. Sede di importanti stabilimenti e leader nelle energie rinnovabili.", "url": "", "placeholder": "" },
+            { "label": "Innovazione", "desc": "Hub tecnologici in crescita a Barcellona e Madrid, con focus su BioTech e Smart Cities.", "url": "", "placeholder": "" }
+        ],
+        "resources": "Il sottosuolo spagnolo è tra i più ricchi d'Europa per minerali. Primo produttore mondiale di mercurio e gesso, con importanti giacimenti di piombo e uranio."
+    }
+}
