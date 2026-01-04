@@ -24,6 +24,7 @@
                 <button onclick="app.switchTab('societa')" id="tab-societa" class="inactive-tab py-2 whitespace-nowrap">Società & Città</button>
                 <button onclick="app.switchTab('cultura')" id="tab-cultura" class="inactive-tab py-2 whitespace-nowrap">Cultura & Arte</button>
                 <button onclick="app.switchTab('economia')" id="tab-economia" class="inactive-tab py-2 whitespace-nowrap">Economia</button>
+                <button onclick="app.switchTab('crediti')" id="tab-crediti" class="inactive-tab py-2 whitespace-nowrap">Crediti</button>
             </nav>
         </div>
     </header>
@@ -128,6 +129,15 @@
                 </div>
                 <div id="config-editor" class="space-y-8"></div>
             </div>
+        </section>
+
+        <!-- SEZIONE 5: CREDITI -->
+        <section id="view-crediti" class="hidden fade-in">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-stone-900">Crediti</h2>
+                <p class="text-stone-500 mt-2">Un ringraziamento speciale a chi ha contribuito a questo progetto.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="crediti-grid"></div>
         </section>
     </main>
 

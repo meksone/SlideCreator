@@ -74,6 +74,17 @@ const app = {
                 <span class="font-black text-stone-900">${item.value}%</span>
             </div>
         `).join('');
+
+        // 5. Crediti
+        const creditiGrid = document.getElementById('crediti-grid');
+        creditiGrid.innerHTML = dataRepo.crediti.map((c, idx) => `
+            <div class="bg-white rounded-[2rem] shadow-lg overflow-hidden flex flex-col items-center text-center p-8 group hover:-translate-y-2 transition-all duration-300">
+                <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-stone-100 shadow-inner">
+                    <img src="${c.url || 'https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg'}" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-stone-900">${c.name}</h3>
+            </div>
+        `).join('');
     },
 
     selectCity(idx) {
@@ -244,6 +255,24 @@ const app = {
             </div>
             <div><label class="text-[10px] font-bold text-stone-400 uppercase">Testo Risorse Naturali</label>
                  <textarea oninput="dataRepo.economia.resources = this.value" class="w-full border p-2 rounded-lg bg-stone-50 h-24 mt-1">${dataRepo.economia.resources}</textarea></div>
+        </div>`;
+
+        // --- 5. CREDITI ---
+        let creditiConfig = dataRepo.crediti.map((c, idx) => `
+        <div class="p-6 border border-stone-200 rounded-[2rem] bg-stone-50/50 mb-6 shadow-sm">
+            <div class="flex justify-between items-center mb-4">
+                <input type="text" value="${c.name}" oninput="dataRepo.crediti[${idx}].name = this.value" class="font-black uppercase border-b bg-transparent outline-none border-stone-300 focus:border-red-600 w-full mr-4">
+                <button onclick="app.removeItem('crediti', ${idx})" class="btn-minus">X</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div><label class="text-[9px] font-bold text-stone-400 block uppercase mb-1">URL Immagine</label><input type="text" value="${c.url}" oninput="dataRepo.crediti[${idx}].url = this.value" class="w-full border p-2 text-xs rounded-lg" placeholder="https://..."></div>
+            </div>
+        </div>`).join('');
+
+        editor.innerHTML += `
+        <div class="config-section">
+            <div class="flex justify-between items-center mb-8 border-b pb-4"><h3 class="text-xl font-black text-red-600 uppercase">5. CREDITI</h3><button onclick="app.addItem('crediti', {name:'Nuovo Credito', url:''})" class="btn-plus">Aggiungi Credito</button></div>
+            ${creditiConfig}
         </div>`;
     },
 

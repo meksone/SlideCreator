@@ -14,3 +14,11 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 .btn-plus:hover { background-color: #16a34a; color: white; }
 .btn-minus { background-color: #fee2e2; color: #dc2626; font-weight: bold; padding: 0.5rem 1rem; border-radius: 0.75rem; transition: all 0.2s; border: none; cursor: pointer; }
 .btn-minus:hover { background-color: #dc2626; color: white; }
+
+#crediti-grid .w-32 {
+    width: 8rem;
+}
+
+#crediti-grid .h-32 {
+    height: 8rem;
+}
